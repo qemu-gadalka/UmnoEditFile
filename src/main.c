@@ -19,9 +19,11 @@ int main() {
         if (strcmp(choise, "1") == 0) {
             OverWrite();
         }
+            
         else if (strcmp(choise, "2") == 0) {
             STTFFF();
         }
+            
         else {
             printf("Unknown Command: %s\n", choise);
         }
@@ -30,3 +32,4 @@ int main() {
     return 0;
 
 }
+
