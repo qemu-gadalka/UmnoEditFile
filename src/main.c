@@ -7,9 +7,11 @@ void STTFFF();
 int main() {
     char choise[10];
 
-    printf("[1] - OverWrite\n[2] - Set Text to File From File\n\n> ");
+    printf("[1] - OverWrite\n[2] - Set Text to File From File\n");
 
     while (1) {
+        printf("\n> ");
+        
         if (fgets(choise, sizeof(choise), stdin)) {
             choise[strcspn(choise, "\n")] = 0;
         }
@@ -26,4 +28,5 @@ int main() {
     }
 
     return 0;
+
 }
